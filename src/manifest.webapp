@@ -1,0 +1,21 @@
+{
+  "version": "0.1",
+  "name": "Fox Nest",
+  "launch_path": "/index.html",
+  "description": "Boilerplate App",
+  "developer": {
+    "name": "Tarek Ziade",
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+    "desktop-notification": {
+      "description": "To show notifications"
+    },
+    "geolocation": {
+      "description": "Marking out user location"
+    }
+  }
+}
