@@ -10,6 +10,14 @@
   <button id="install">Install</button>
   <p id="installation-instructions">Press the button to install this app.</p>
 
+  <script type="text/javascript" src="js/fxa-client.js"></script>
   <script type="text/javascript" src="js/foxnest.js"></script>
+  <script>
+    var server = 'https://api-accounts-latest.dev.lcip.org/v1';
+    var client = new FxAccountClient(server);
+    //client.signUp('tarek@mozilla.com', 'password');
+    client.signIn('tarek@mozilla.com', 'password').then(function(data)
+    {alert(data.sessionToken)});
+  </script>
 </body>
 </html>
